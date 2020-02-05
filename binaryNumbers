@@ -26,7 +26,7 @@ public class binaryNumbers {
 		for(int i = 0 ; i < num.length ; i++) {
 			bin += num[i] * Math.pow(2, num.length -1 - i);
 		}
-		System.out.println(""" + s + """ + " -> " + bin);
+		System.out.println("'" + s + "'" + " -> " + bin);
 		
 
 	}
