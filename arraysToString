@@ -1,0 +1,30 @@
+/*   
+ *   2) Написать свой вариант метода
+ *   Arrays.toString() для int[]. 
+ *    */
+
+package seven.lesson.home;
+
+public class arrayToString {
+	static String arraysToStrings(int[] a) {
+		String str = "[";
+		if(a.length > 0) {
+		for(int i = 0 ; i < a.length ; i++) {
+			if(i<a.length - 1) {
+			str += a[i] + ", ";
+			}else {
+				str += a[i];
+			}
+		}
+		}
+		return str+"]";
+	}
+
+	public static void main(String[] args) {
+		int[] numbers = new int[] {48,48,6,41,38,4,18,5,81,12,48,18,77,2,248,12,12,4,41,5,15,4};
+		System.out.println(arraysToStrings(numbers));
+		
+
+	}
+
+}
